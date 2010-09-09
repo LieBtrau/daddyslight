@@ -1,0 +1,34 @@
+#summary Specifications
+
+= Requirements specification =
+ * back light 
+ * red
+ * easily mounted on the back of my daddy's bike
+ * mounting should be fix, so that the light can't be stolen
+ * preferably wide opening angle of the light, so that it can be seen from different angles
+ * should be as bright as possible
+ * must be powered by the bike dynamo.
+ * shouldn't cost more than about €10.
+
+= Technical Realisation =
+== Dynamo ==
+A test ride revealed that the 6V/3W dynamo delivers about 3.5Vac (no load connected) when riding at a gentle speed (15 to 20km/h).
+
+== Led ==
+ * LRW51M-HXJY-1
+  * Osram Golden Dragon
+  * cheap
+  * only 1W
+ * ASMT-AH30-ARR00 (red orange) and the ASMT-AR30-ARR00 (red)
+  * 140° viewing angle
+  * @ 700mA: 85 lm/mW
+  * @ 1A with 5% duty cycle: tpMAX = 0,1s
+ * ASMT-JR30-ARS01
+  * 165° viewing angle
+  * @ 700mA: 80 lm/mW
+  * @ 1A with 5% duty cycle: tpMAX = 0,002s
+ * The ASMT-AR30-ARR00 seems to be the best performing LED.
+
+== Rectifier ==
+ A diode bridge rectifier, even with Schottky diodes will reduce efficiency too much, because a voltage loss of about 1V over the bridge is too much if the AC-voltage is only 3.5V!
+ Therefore a bridge with 2 MOSFETS and two Schottky diodes will be used.  MOSFETS can have a very low ON-resistance.  So there's very little voltage drop.  The disadvantage is that MOSFETS conduct current in both directions when they're ON.  To prevent this, half of the bridge is constituted of Schottky-diodes.
