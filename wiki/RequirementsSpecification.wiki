@@ -22,11 +22,11 @@ The 3W-LED will only be on 1/4 of the time, so the 3W-dynamo will be enough to d
   * only 1W
  * ASMT-AH30-ARR00 (red orange) and the ASMT-AR30-ARR00 (red)
   * 140° viewing angle
-  * @ 700mA: 85 lm/mW
+  * @ 700mA: 85 lm
   * @ 1A with 5% duty cycle: tpMAX = 0,1s
  * ASMT-JR30-ARS01
   * 165° viewing angle
-  * @ 700mA: 80 lm/mW
+  * @ 700mA: 80 lm
   * @ 1A with 5% duty cycle: tpMAX = 0,002s
  * The ASMT-AR30-ARR00 seems to be the best performing LED.
 
