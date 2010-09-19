@@ -9,3 +9,6 @@
  * should be as bright as possible
  * must be powered by the bike dynamo.
  * shouldn't cost more than about €10.
+
+Extra requirement:
+ * LED must remain on for 1 minute after cycling (e.g. when waiting for traffic lights).
